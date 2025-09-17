@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Farming Dashboard</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    :root {
+      --bs-primary: #647FBC;
+      --bs-secondary: #91ADC8;
+      --bs-success: #AED6CF;
+      --bs-warning: #FAFDD6;
+      --bs-danger: #e57373;
+      --bs-info: #4dd0e1;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .card-metric {
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: left;
+      height: 100%;
+    }
+
+    .metric-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      opacity: 0.8;
+    }
+
+    .metric-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .border-left-primary { border-left: 6px solid var(--bs-primary); }
+    .border-left-secondary { border-left: 6px solid var(--bs-secondary); }
+    .border-left-success { border-left: 6px solid var(--bs-success); }
+    .border-left-warning { border-left: 6px solid var(--bs-warning); }
+    .border-left-danger { border-left: 6px solid var(--bs-danger); }
+    .border-left-info { border-left: 6px solid var(--bs-info); }
+  </style>
+</head>
+
+<body>
+  <div class="ms-3 mt-3">
+    <h1>Smart Farming</h1>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row g-3">
+      <div class="col-md-3 col-sm-6">
+        <div class="card-metric border-left-primary bg-white">
+          <div class="metric-title text-primary">Kelembaban (RH)</div>
+          <div class="metric-value text-primary">54 %</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card-metric border-left-secondary bg-white">
+          <div class="metric-title text-secondary">TDS</div>
+          <div class="metric-value text-dark">400 ppm</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card-metric border-left-info bg-white">
+          <div class="metric-title text-info">Kekeruhan (Turbid)</div>
+          <div class="metric-value text-dark">18 NTU</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card-metric border-left-warning bg-white">
+          <div class="metric-title text-warning">Temperatur Air (WTemp)</div>
+          <div class="metric-value text-dark">25 °C</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card-metric border-left-danger bg-white">
+          <div class="metric-title text-danger">Aliran Air (WFlow)</div>
+          <div class="metric-value text-dark">34</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card-metric border-left-success bg-white">
+          <div class="metric-title text-success">Oksigen Terlarut</div>
+          <div class="metric-value text-dark">10 ppm</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card-metric border-left-success bg-white">
+          <div class="metric-title text-success">Intensitas Cahaya (Lux)</div>
+          <div class="metric-value text-dark">100 Lux</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card-metric border-left-primary bg-white">
+          <div class="metric-title text-primary">Temperatur Udara (AmTemp)</div>
+          <div class="metric-value text-dark">34 °C</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card-metric border-left-warning bg-white">
+          <div class="metric-title text-warning">EC</div>
+          <div class="metric-value text-dark">2</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card-metric border-left-danger bg-white">
+          <div class="metric-title text-danger">pH</div>
+          <div class="metric-value text-dark">7.1</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
